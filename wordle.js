@@ -60,7 +60,7 @@ function colorTiles(word, goal, x){
             allTiles[x][i].style.color = "white"
         } else if(goal.includes(word[i])){
             allTiles[x][i].style.backgroundColor = "yellow"
-            allTiles[x][i].style.color = white
+            allTiles[x][i].style.color = "white"
         } else{
             allTiles[x][i].style.backgroundColor = "gray"
             allTiles[x][i].style.color = "white"
