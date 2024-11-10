@@ -19,7 +19,9 @@ for (let row = 0; row < 6; row++) {
 document.addEventListener('keydown', (event) => {
     if (event.key.length === 1 && event.key.match(/[a-zA-Z]/)) {
         console.log(`You typed: ${event.key}`);
-        word += event.key
+        if(y != 5){
+            word += event.key
+        }
         allTiles[x][y].innerHTML = event.key.toUpperCase()
         console.log(allTiles[x][y])
         y+=1
